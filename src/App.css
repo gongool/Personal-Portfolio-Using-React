@@ -106,6 +106,7 @@ button {
   cursor: pointer;
   border: none;
   outline: none;
+  
 }
 
 img {
@@ -142,8 +143,9 @@ img {
 }
 
 .grid {
-  display: flex;
+  display: grid;
   gap: 1.5rem;
+  grid-auto-flow: column;
 }
 
 /*=============== BUTTONS ===============*/
@@ -167,6 +169,7 @@ img {
 .button--flex {
   display: inline-flex;
   align-items: center;
+
 }
 
 /*=============== BREAKPOINTS ===============*/
