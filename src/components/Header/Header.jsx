@@ -10,7 +10,7 @@ const Header = () => {
                 <a href="index.html" className="nav__logo">GONGOOL</a>
 
                 <div className="nav__menu">
-                    <ul className="nav__list">
+                    <ul className="nav__list grid">
                         <li className="nav__item">
                             <a href="#home" className="nav__link">
                                 <i className="uil uil-estate nav__icon"></i>

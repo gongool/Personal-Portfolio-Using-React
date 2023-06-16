@@ -142,9 +142,8 @@ img {
 }
 
 .grid {
-  display: grid;
-  gap: .5rem;
-  place-items: center;
+  display: flex;
+  gap: 1.5rem;
 }
 
 /*=============== BUTTONS ===============*/
