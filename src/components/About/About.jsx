@@ -15,10 +15,7 @@ const About = () => {
                 <div className="about__data">
                     <Info />
                     <p className="about__description">
-
-                        As a frontend developer, I craft web pages with UI/UX
-                        design, boasting extensive experience and a satisfied
-                        client base.
+                        As a frontend developer, I craft web pages with UI/UX design, boasting extensive experience and a satisfied client base.
                     </p>
                     <a download="" href={CV} className="button button--flex">
                         Download CV
