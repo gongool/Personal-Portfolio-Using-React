@@ -169,7 +169,7 @@ img {
 .button--flex {
   display: inline-flex;
   align-items: center;
-
+  text-decoration: none;
 }
 
 /*=============== BREAKPOINTS ===============*/
@@ -183,6 +183,7 @@ img {
   .button {
     padding: 1rem 1.75rem;
   }
+
 
   .button__icon {
     width: 22px;
