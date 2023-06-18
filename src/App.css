@@ -220,3 +220,52 @@ img {
     margin-right: var(--mb-1);
   }
 }
+
+
+
+
+/* =============== BREAKPOINTS ===============
+/* For large devices */
+@media screen and (max-width: 992px) {
+  .services__container {
+    grid-template-columns: repeat(2, 218px);
+    row-gap: 2rem;
+  }
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+  .services__container {
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 2rem;
+  }
+
+  .services__content {
+    padding: 3.5rem 0.5rem 1.25rem 1.5rem;
+  }
+
+  .sercvices__icon {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .services__modal-content {
+    padding: 4.5rem 1.5rem 2.5rem;
+  }
+
+  .services__modal-description {
+    padding: 0;
+  }
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+  .services__container {
+    grid-template-columns: auto;
+  }
+
+  .services__content {
+    width: 220px;
+  }
+}
