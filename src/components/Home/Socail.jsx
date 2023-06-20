@@ -3,6 +3,7 @@ import React from 'react'
 const Socail = () => {
     return (
         <div className="home__social">
+            
             <a href="https://github.com/gongool" className="home__social-icon" target='_blank'>
                 <i className="uil uil-github-alt"></i>
             </a>
