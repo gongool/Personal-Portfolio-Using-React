@@ -21,6 +21,7 @@
     grid-template-columns: 300px;
 }
 
+
 .contact__card {
     background-color: var(--container-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -75,7 +76,7 @@
 .contact__form-div {
     position: relative;
     margin-bottom: var(--mb-2);
-    height: 4rem;
+    height: 3rem;
 }
 
 .contact__form-input {
@@ -150,6 +151,3 @@
         width: 100%;
     }
 }
-
-/* For small devices */
-@media screen and (max-width: 350px) {}

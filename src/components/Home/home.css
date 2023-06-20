@@ -3,6 +3,7 @@
   padding-top: 5.5rem;
   column-gap: 2rem;
   align-items: center;
+  justify-items: center;
 }
 
 .home__social {
@@ -34,7 +35,7 @@
 .home__subtitle {
   position: relative;
   font-size: var(--h3-font-size);
-  padding-left: 5.4rem;
+ text-align: center;
   font-weight: var(--font-normal);
   margin-bottom: var(--mb-1);
 }
@@ -42,6 +43,7 @@
 .home__description {
   max-width: 400px;
   margin-bottom: var(--mb-3);
+  text-align: justify;
 }
 
 .home__img {
@@ -129,12 +131,15 @@
   color: var(--title-color);
 }
 
+
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 992px) {
   .home__content {
     grid-template-columns: 100px repeat(2, 1fr);
     column-gap: 1.25rem;
+    align-items: center;
+    justify-items: center;
   }
 
   .home__hand {
@@ -147,7 +152,7 @@
   }
 
   .home__subtitle {
-    padding-left: 5.4rem;
+   text-align: center;
     margin-bottom: var(--mb-1);
     font-size: 1rem;
     width: max-content;
@@ -156,6 +161,7 @@
 
   .home__description {
     max-width: initial;
+
 
   }
 
@@ -207,6 +213,8 @@
 
   .home__description {
     margin-bottom: 2rem;
+  
+   
   }
 
   .home__data {
@@ -216,8 +224,8 @@
   }
 
   .home__subtitle {
-    margin-right: 5rem;
-
+  
+text-align: center;
   }
 
   .home__scroll {
