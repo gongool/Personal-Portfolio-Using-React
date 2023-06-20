@@ -1,7 +1,23 @@
-import React from 'react'
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import "./contact.css"
 
 const Contact = () => {
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_4156god', 'template_rcdrqxy', form.current, 'O3FGCaiop80zfofPY')
+            .then((result) => {
+                console.log('Email Sent:', result.text);
+                form.current.reset(); //Reset The From Field
+            }, (error) => {
+                console.log('Error sending email:', error.text);
+            });
+    };
+
     return (
         <section className='contact section' id='contact'>
             <h2 className="section__title">Get in Touch</h2>
@@ -32,7 +48,7 @@ const Contact = () => {
 
                 <div className="contact__contect">
                     <h3 className="contact__title">Write Me Your Project</h3>
-                    <form action="" className="contact__form">
+                    <form ref={form} onSubmit={sendEmail} className="contact__form" >
 
                         <div className="contact__form-div">
                             <label className="contact__form-tag">Name</label>
@@ -46,7 +62,7 @@ const Contact = () => {
 
                         <div className="contact__form-div contact__form-area ">
                             <label className="contact__form-tag">Project</label>
-                            <textarea name="projcet" cols="30" rows="10" className='contact__form-input' placeholder='Write Your Project'></textarea>
+                            <textarea name="project" cols="30" rows="10" className='contact__form-input' placeholder='Write Your Project'></textarea>
                         </div>
 
                         <button className="button button--flex">

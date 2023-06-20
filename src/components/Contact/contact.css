@@ -103,6 +103,8 @@
     z-index: 10;
 }
 
+
+
 .contact__form-area {
     height: 11rem;
 }
@@ -122,9 +124,9 @@
 
 /* For medium devices */
 @media screen and (max-width: 768px) {
-    .contact__container { 
-    grid-template-columns: 1fr;
-    row-gap: 3rem;
+    .contact__container {
+        grid-template-columns: 1fr;
+        row-gap: 3rem;
     }
 
     .contact__info {
@@ -139,7 +141,7 @@
 }
 
 @media screen and (max-width: 576px) {
-    .contact__info { 
+    .contact__info {
         grid-template-columns: 1fr;
 
     }

@@ -123,14 +123,25 @@
 /* =============== BREAKPOINTS ===============
 /* For large devices */
 @media screen and (max-width: 992px) {
+ 
 }
 
 /* For medium devices */
 @media screen and (max-width: 768px) {
+ 
+  .services__container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center; 
+    padding: 0 2.5rem; 
+  }
+
+  .services__content {
+    padding: 6rem 2.5rem 2rem; 
+  }
 }
 
-@media screen and (max-width: 576px) {
-}
+
 
 /* For small devices */
 @media screen and (max-width: 350px) {
